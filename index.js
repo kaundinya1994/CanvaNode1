@@ -4,6 +4,7 @@ const app = express();
 app.get("/", (req, res) => {
   res.send("Test data");
 });
-app.listen("8000", () => {
+const port = process.env.PORT || 5000
+app.listen(port, () => {
   console.log("Listening at 8000");
 });
